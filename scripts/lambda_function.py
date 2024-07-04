@@ -17,14 +17,15 @@ def handler(event, context):
     data = [13.88,5.4,2.23,19,85,0.98,0.34,0.4,0.68,4.9,0.50,1.30,420]
     
     body = json.loads(event['body'])
-    dummy = body['data']
 
-    dummy2 = body.data
+    body_data = json.loads(body)
+    dummy = body_data['data']
+
 
     print("dummy ===== ",dummy)
-    print("dummy2 ===== ",dummy2)
-
     
+
+
     print(data)
     payload = ','.join([str(item) for item in data])
     print(payload)
