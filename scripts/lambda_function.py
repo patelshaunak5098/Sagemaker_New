@@ -20,10 +20,8 @@ def handler(event, context):
 
     print("body ==== ",body)
 
-    body_data = json.loads(body)
-
-    print("Body Data ==== ",body_data)
-    dummy = body_data['data']
+    print("Body Data ==== ",body['data'])
+    dummy = body['data']
 
 
     print("dummy ===== ",dummy)
