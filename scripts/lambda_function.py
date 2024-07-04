@@ -18,6 +18,8 @@ def handler(event, context):
     
     body = json.loads(event['body'])
 
+    print("body ==== ",body)
+
     body_data = json.loads(body)
     dummy = body_data['data']
 
