@@ -6,7 +6,7 @@ def handler(event, context):
 
     # Your logic goes here
 
-    
+    print("Event ===== ",event)
 
     # Initialize the SageMaker runtime client
     runtime = boto3.client('sagemaker-runtime', region_name='us-east-1')
