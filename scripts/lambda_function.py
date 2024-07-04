@@ -15,7 +15,7 @@ def handler(event, context):
     endpoint_name = 'xgboost-2024-07-04-15-28-03-321'
 
     data = [13.88,5.4,2.23,19,85,0.98,0.34,0.4,0.68,4.9,0.50,1.30,420]
-    dummy = event.get('body')
+    dummy = event['body']['data']
 
     print("dummy ===== ",dummy.data)
     
