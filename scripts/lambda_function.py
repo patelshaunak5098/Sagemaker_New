@@ -6,6 +6,8 @@ def handler(event, context):
 
     # Your logic goes here
 
+    
+
     # Initialize the SageMaker runtime client
     runtime = boto3.client('sagemaker-runtime', region_name='us-east-1')
 
@@ -29,7 +31,7 @@ def handler(event, context):
 
     return {
         'statusCode': 200,
-        'body': result
+        'body': print("Event=",event)+result
     }
 
     '''
