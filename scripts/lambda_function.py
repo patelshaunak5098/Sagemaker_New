@@ -14,19 +14,14 @@ def handler(event, context):
     # Your endpoint name
     endpoint_name = 'xgboost-2024-07-04-15-28-03-321'
 
-    data = [13.88,5.4,2.23,19,85,0.98,0.34,0.4,0.68,4.9,0.50,1.30,420]
+    #data = [13.88,5.4,2.23,19,85,0.98,0.34,0.4,0.68,4.9,0.50,1.30,420]
     
     body = json.loads(event['body'])
 
     print("body ==== ",body)
-
     print("Body Data ==== ",body['data'])
-    dummy = body['data']
 
-
-    print("dummy ===== ",dummy)
-    
-
+    data = body['data']
 
     print(data)
     payload = ','.join([str(item) for item in data])
@@ -44,7 +39,7 @@ def handler(event, context):
 
     return {
         'statusCode': 200,
-        'body': dummy+result
+        'body': result
     }
 
     '''
