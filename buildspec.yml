@@ -10,7 +10,7 @@ phases:
       #- cd lib
       #- zip -r9 ../deployment_package.zip .
       #- cd ..
-      - zip -g ./Infra/lambda_function.zip lambda_function.py
+      - zip -g ./Infra/lambda_function.zip ./scripts/lambda_function.py
   post_build:
     commands:
       - echo "Updating lambda Function..."
