@@ -3,7 +3,7 @@ variable "lambda_function_name" {
 }
 
 variable "lambda_handler" {
-  default = "lambda_function.handler"
+  default = "scripts/lambda_function.handler"
 }
 
 variable "runtime" {
