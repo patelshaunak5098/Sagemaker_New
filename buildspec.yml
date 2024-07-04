@@ -1,0 +1,19 @@
+version: 0.2
+phases:
+  pre_build:  
+    commands:
+      - echo "Installing dependencies..."
+      #- pip install -r requirements.txt -t lib
+  build:
+    commands:
+      - echo "Zipping deployment package..."
+      #- cd lib
+      #- zip -r9 ../deployment_package.zip .
+      #- cd ..
+      - zip -g ./Infra/lambda_function.zip ./scripts/lambda_function.py
+  post_build:
+    commands:
+      - echo "Updating lambda Function..."
+      - aws lambda update-function-code --function-name sagemaker_function --zip-file fileb://Infra/lambda_function.zip
+      - echo "DONE!!"
+
