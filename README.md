@@ -6,8 +6,8 @@ The project aims to establish a robust infrastructure foundation that supports t
 ## Key Features 🌟
 - "Infrastructure Automation with Terraform": Developed infrastructure automation using Terraform on AWS cloud.
 - "CI/CD Pipelines with Jenkins": Created Jenkins pipelines to provision the infrastructure and implemented CI/CD pipeline for build and deployment.
-- "AWS Lambda Functions": Worked on AWS Lambda function using Python to manage custom requirements for periodic database backups.
-- "AWS Services Utilized": Amazon VPC, EC2, EFS, IAM, S3, RDS, ELB, EKS, Lambda, EventBridge, PrivateLink, Secrets Manager, Certificate Manager, CloudWatch, CloudTrail, CloudFront, Route53, WAF.
+- "AWS Lambda Functions": Worked on AWS Lambda function using Python to manage Sagemaker Endpoint.
+- "AWS Services Utilized": Amazon VPC, EC2, EFS, IAM, S3, RDS, ELB, EKS, Lambda, Sagemaker, EventBridge, PrivateLink, Secrets Manager, Certificate Manager, CloudWatch, CloudTrail, CloudFront, Route53, WAF.
 
 ## Technology Stack 🛠️
 - "Infrastructure as Code": Terraform
